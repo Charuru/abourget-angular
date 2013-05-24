@@ -64,6 +64,26 @@ angular.module('watchFighers', [])
       }
     };
   })
+  
+  .directive('setDataId', function() {
+    return {
+      restrict: "A",
+      priority: 100,
+      link: function($scope, $el, $attr) {
+        $($el).attr('data-id', $scope.$eval($attr.setDataId));
+      }
+    };
+  })
+
+  .directive('setSrc', function() {
+    return {
+      restrict: "A",
+      priority: 100,
+      link: function($scope, $el, $attr) {
+        $($el).attr('src', $scope.$eval($attr.setSrc));
+      }
+    };
+  })
 
   .directive('setHref', function() {
     return {
