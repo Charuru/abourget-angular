@@ -1,9 +1,4 @@
-# Widgets and tools for AngularJS development.
-
-Often components I was reusing everywhere.
-
-
-## $watch fighters
+# $watch fighters
 
 I often had to show on the screen large amount of informations, like
 tables, graphs or other heavyweight data.  Using AngularJS, if I used
@@ -34,6 +29,10 @@ I wrote those simple `set-...` directives.
 There is:
 
  * `set-title`, which sets the `title` attribute once and for all
+ 
+ * `set-src`, which sets the `src` attribute once and for all
+ 
+ * `set-data-id`, which sets the `data-id` attribute once and for all
 
  * `set-href`, sets the `href` attribute
 
