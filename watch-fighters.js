@@ -94,6 +94,16 @@ angular.module('watchFighers', [])
       }
     };
   })
+  
+  .directive('setStyle', function() {
+    return {
+      restrict: "A",
+      priority: 100,
+      link: function($scope, $el, $attr) {
+        $el.css($scope.$eval($attr.setStyle));
+      }
+    };
+  })
 
   ;
 
