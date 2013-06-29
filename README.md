@@ -34,7 +34,9 @@ There is:
  
  * `set-data-id`, which sets the `data-id` attribute once and for all
 
- * `set-href`, sets the `href` attribute
+ * `set-href`, sets the `href` attribute once and for all
+ 
+ * `set-style`, sets the `style` attribute once and for all
 
  * `set-text`, which sets the `.text()` content (using jQuery)
 
